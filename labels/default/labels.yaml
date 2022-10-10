@@ -1,7 +1,22 @@
 -
+  name: bug
+  color: d73a4a
+  description: 'Something isn''t working'
+  aliases: []
+-
+  name: documentation
+  color: 0075ca
+  description: 'Improvements or additions to documentation'
+  aliases: []
+-
   name: duplicate
   color: cfd3d7
   description: 'This issue or pull request already exists'
+  aliases: []
+-
+  name: enhancement
+  color: a2eeef
+  description: 'New feature or request'
   aliases: []
 -
   name: 'good first issue'
@@ -9,14 +24,9 @@
   description: 'Good for newcomers'
   aliases: []
 -
-  name: help-wanted
+  name: 'help wanted'
   color: '008672'
   description: 'Extra attention is needed'
-  aliases: []
--
-  name: info-needed
-  color: d876e3
-  description: 'Further information is requested'
   aliases: []
 -
   name: invalid
@@ -24,44 +34,9 @@
   description: 'This doesn''t seem right'
   aliases: []
 -
-  name: 'out of scope'
-  color: FBCA04
-  description: 'This is out of scope for the project'
-  aliases: []
--
-  name: stale
-  color: bfd4f2
-  description: 'Nothing has happened in a while'
-  aliases: []
--
-  name: 'type | bug'
-  color: d73a4a
-  description: 'Something isn''t working'
-  aliases: []
--
-  name: 'type | CI'
-  color: 8FB63B
-  description: 'Continuous integration changes'
-  aliases: []
--
-  name: 'type | docs'
-  color: 0075ca
-  description: 'Improvements or additions to documentation'
-  aliases: []
--
-  name: 'type | feature'
-  color: a2eeef
-  description: 'New feature or request'
-  aliases: []
--
-  name: 'type | other'
-  color: c5def5
-  description: 'For things that don''t fit elsewhere'
-  aliases: []
--
-  name: 'type | security'
-  color: D93F0B
-  description: 'Security related changes'
+  name: question
+  color: d876e3
+  description: 'Further information is requested'
   aliases: []
 -
   name: wontfix
