@@ -1,0 +1,26 @@
+name: 📃 Cambio Documentazione
+description: Riporta errori o aggiornamenti che vorresti venissero implementati nella documentazione.
+title: 'Documentation: '
+labels: 'type | docs'
+body: 
+
+- type: markdown
+  attributes:
+    value: |
+      Grazie della tua richiesta!
+
+      Assicurati di aver compilato il form sottostante in ogni sua parte.
+      
+- type: checkboxes
+  attributes:
+    label: Checklist Preflight 
+    description: Confermo di aver completato gli step seguenti.
+    options:
+      - label: Ho cercato fra la documentazione esistente e non trovo quella che cerco, oppure nessuna esistente copre il mio bisogno.
+        required: true
+
+- type: textarea
+  attributes:
+    label: Descrivi il problema
+  validations: 
+    required: true
