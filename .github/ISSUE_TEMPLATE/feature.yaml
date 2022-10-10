@@ -1,0 +1,42 @@
+name: ✨ Richiesta Feature
+description: Richiedi una nuova feature o una modifica ad una esistente.
+title: 'Feature: '
+labels: 'type | feature'
+body: 
+
+- type: markdown
+  attributes:
+    value: |
+      Grazie per inviato una richiesta di feature!
+
+      Per favore compila il form sottostante in ogni sua parte.
+      
+- type: checkboxes
+  attributes:
+    label: Checklist Preflight
+    description: Assicurati di aver completato le azioni seguenti.
+    options:
+      - label: Confermo di aver cercato e di non aver trovato quello che cerco o vorrei.
+        required: true
+
+- type: dropdown
+  attributes:
+    label: Nuova o Esistente?
+    description: È una nuova feature quella che stai richiedendo o un aggiornamento di una esistente?
+    options:
+      - Nuova Feature
+      - Aggiornamento di una esistente 
+  validations:
+    required: true
+  
+- type: textarea
+  attributes:
+    label: Descrizione della Feature
+  validations: 
+    required: true
+
+- type: textarea
+  attributes:
+    label: Spiegaci perchè dovremo implementarla.
+  validations: 
+    required: true
