@@ -1,0 +1,47 @@
+name: 🐛 Bug report
+title: 'Bug: '
+description: Report unintentional or broken behaviour
+labels: 'type | bug' 
+body:
+- type: markdown
+  attributes:
+    value: |
+      Grazie per eaver segnalato un bug!
+
+      Assicurarsi di aver compilato il template sottostante in ogni sua parte per poter permettere una facile risoluzione del problema.
+      
+- type: checkboxes
+  attributes:
+    label: Checklist Preflight
+    description: Assicurarti di aver completato tutti gli step seguenti.
+    options:
+      - label: Ho cercato fra le varie issues e non ho trovato la mia, o trovato una che contenga il mio problema.
+        required: true
+        
+- type: textarea
+  attributes:
+    label: Comportamento Bug
+    description: Una descrizione dettagliata di cosa succede quando c'è il bug.
+  validations:
+    required: true
+    
+- type: textarea
+  attributes:
+    label: Comportamento Atteso
+    description: Una descrizione di cosa ti saresti aspettat*.
+  validations:
+    required: true
+    
+- type: textarea
+  attributes:
+    label: Passaggi per riprodurre
+    description: Passaggi per riprodurre il bug se non chiarito in precedenza.
+    placeholder: |
+      1. Mio Setup '...'
+      2. Eseguo '...'
+      3. Errore '...'
+      
+- type: textarea
+  attributes:
+    label: Informazioni Aggiuntive
+    description: Links? Rriferimenti? Qualsiasi cosa ci aiuti a capire cosa è accaduto!
