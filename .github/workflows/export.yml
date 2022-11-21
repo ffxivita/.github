@@ -20,7 +20,7 @@ jobs:
           add-aliases: true
       
       - name: Push Artifact Into Branch
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: 'Label config'
           path: './labels/default'
