@@ -1,0 +1,33 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": "Default preset for use with FFXIVITA repos",
+    "extends": [
+        "github>ahdcreative/renovate-config",
+        ":maintainLockFilesWeekly",
+        ":rebaseStalePrs",
+        ":semanticCommits",
+        "docker:enableMajor",
+        "docker:pinDigests",
+        "group:linters",
+        "helpers:pinGitHubActionDigests"
+    ],
+    "assignees": ["DarkArtek", "HsinVega842"],
+    "automerge": false,
+    "configMigration": true,
+    "prCreation": "immediate",
+    "internalChecksFilter": "strict",
+    "packageRules": [
+        {
+            "description": "Require Approval for major updates",
+            "matchUpdateTypes": ["major", "minor"],
+            "dependencyDashboardApproval": true
+        },
+        {
+            "description": "Disable Ubuntu minor updates",
+            "matchDatasources": ["docker"],
+            "matchPackageNames": ["amd64/ubuntu", "ubuntu"],
+            "matchUpdateTypes": ["minor"],
+            "enabled": false
+        }
+    ]
+}
