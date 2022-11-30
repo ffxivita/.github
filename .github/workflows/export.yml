@@ -10,22 +10,22 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3.1.0
+        uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8 # v3.1.0
   
       - name: Export Label Config
-        uses: EndBug/export-label-config@v1
+        uses: EndBug/export-label-config@dd7608994f61774a59e9011a8386ee98976328c9 # v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           raw-result: false
           add-aliases: true
       
       - name: Push Artifact Into Branch
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@9782bd6a9848b53b110e712e20e42d89988822b7 # v3
         with:
           name: 'Label config'
           path: './labels/default'
           
-      - uses: EndBug/add-and-commit@v9
+      - uses: EndBug/add-and-commit@61a88be553afe4206585b31aa72387c64295d08b # v9
         with:
           default_author: github_actions
           message: '🔁 Generating Latest Labels [skip ci]'
