@@ -11,7 +11,8 @@
         "group:linters",
         "helpers:pinGitHubActionDigests"
     ],
-    "assignees": ["DarkArtek", "HsinVega842"],
+    "assignees": ["DarkArtek", "HsinVega842", "hikuch"],
+    "reviewers": ["DarkArtek, "HsinVega842", "hikuch"],
     "automerge": false,
     "configMigration": true,
     "prCreation": "immediate",
