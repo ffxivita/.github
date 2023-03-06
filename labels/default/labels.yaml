@@ -4,11 +4,6 @@
   description: 'Something isn''t working'
   aliases: []
 -
-  name: 'configuration error'
-  color: 6b2296
-  description: 'Mend configuration error'
-  aliases: []
--
   name: documentation
   color: 0075ca
   description: 'Improvements or additions to documentation'
@@ -37,6 +32,11 @@
   name: invalid
   color: e4e669
   description: 'This doesn''t seem right'
+  aliases: []
+-
+  name: 'Mend: configuration error'
+  color: 6b2296
+  description: 'Mend configuration error'
   aliases: []
 -
   name: question
