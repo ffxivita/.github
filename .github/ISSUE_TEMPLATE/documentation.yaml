@@ -1,7 +1,7 @@
 name: 📃 Cambio Documentazione
 description: Riporta errori o aggiornamenti che vorresti venissero implementati nella documentazione.
 title: 'Documentation: '
-labels: 'type | docs'
+labels: ["docs"]
 body: 
 
 - type: markdown
