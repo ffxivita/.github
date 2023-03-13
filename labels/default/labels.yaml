@@ -1,12 +1,12 @@
 -
   name: bug
   color: d73a4a
-  description: 'Something isn''t working'
+  description: 'Qualcosa che non va'
   aliases: []
 -
-  name: documentation
+  name: docs
   color: 0075ca
-  description: 'Improvements or additions to documentation'
+  description: 'Aggiunte alla documentazione'
   aliases: []
 -
   name: duplicate
